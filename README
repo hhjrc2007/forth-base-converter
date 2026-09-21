@@ -5,3 +5,26 @@ Number base converter that converts decimal, binary, hex, and octal values.
 * I/O for different bases
 * shows stack before/after
 * support for signed values
+
+Usage
+----
+
+Load the code from the repository root:
+
+	gforth src/io.fs
+
+Convert between bases (from-base, to-base, then the number):
+
+	16 2 convert-base ff
+	2 10 convert-base 1010
+	16 10 convert-base -1f
+
+Print a numver on the stack in any base:
+
+	255 .hex
+	10 .bin
+	-1 16 u.base
+
+Show the stack before and after a word:
+
+	10 20 ' + 16 trace
