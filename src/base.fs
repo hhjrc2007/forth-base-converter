@@ -11,3 +11,11 @@
 : .dec ( n -- ) 10 .base ;
 : .hex ( n -- ) 16 .base ;
 
+: .stack ( base -- ) ['] .s swap with-base ;
+
+: trace ( xt base -- )
+	2>r
+	." before: " r@ .stack cr
+	2r@ drop execute
+	." after: " r@ .stack cr
+	2r> 2drop ;
