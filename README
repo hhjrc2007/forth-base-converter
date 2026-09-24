@@ -8,7 +8,7 @@ Number base converter that converts decimal, binary, hex, and octal values.
 * support for signed values
 
 Usage
-----
+-----
 
 Load the code from the repository root:
 
