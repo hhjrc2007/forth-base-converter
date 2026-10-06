@@ -1,4 +1,4 @@
-Forth base converter
+forth-base-converter
 ====================
 
 Number base converter that converts decimal, binary, hex, and octal values.
@@ -20,7 +20,7 @@ Convert between bases (from-base, to-base, then the number):
 	2 10 convert-base 1010
 	16 10 convert-base -1f
 
-Print a numver on the stack in any base:
+Print a number on the stack in any base:
 
 	255 .hex
 	10 .bin
